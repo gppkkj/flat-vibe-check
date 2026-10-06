@@ -121,7 +121,7 @@ const occupations = [
   "Lawyer",
 ];
 
-function random<T>(arr: T[]): T {
+function random<T>(arr: readonly T[]): T {
   return arr[
     Math.floor(Math.random() * arr.length)
   ];
